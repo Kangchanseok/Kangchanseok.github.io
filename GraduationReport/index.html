@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraduationReport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="hidden" id="login-form">
+        <input required 
+        type="text"
+        class="id"
+        placeholder="ID"
+        minlength="0"
+        maxlength="15" /><br/>
+        <input type="password" class ="password" placeholder="password"/>
+        <button type="submit">Login</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    
+
+    <h1 class="hi"></h1>
+
+    <h1 class="clock">00:00:00</h1>
+
+    <form id="todo-form">
+        <input class ="bar" type="text" placeholder="할 일을 적고 엔터를 눌러주세요" required>
+
+    </form>
+    <ul id="todo-list" >
+        
+    </ul>
+    
+        <div id="weather">
+        <span class="firstweather"></span>
+        <span class="lastcity"></span>
+    </div>
+
+    <script src="JS/Login.js"></script>
+    <script src="JS/Weather.js"></script>
+    <script src="JS/Todo.js"></script> 
+    <script src="JS/clock.js"></script>
+    <script src="JS/background.js"></script>
+</body>
+</html>
